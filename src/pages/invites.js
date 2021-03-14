@@ -30,6 +30,10 @@ const Invites = () => {
                     <p className="px-2 mt-4 text-lg text-gray-700 sm:mt-8"><strong>Gemini</strong></p>
                     <div className="px-6 mt-8 text-sm text-gray-700">Get $10 bucks in Bitcoin <a href='gemini.com/share/e79gvphe' target="_blank" rel="noreferrer">for free</a></div>
                 </div>
+                <div className="grid grid-rows-1 md:grid-rows-1 ...">
+                    <p className="px-2 mt-4 text-lg text-gray-700 sm:mt-8"><strong>BlockFi Credit Card</strong></p>
+                    <div className="px-6 mt-8 text-sm text-gray-700"><a href='https://blockfi.com/credit-card-waitlist/?r=vupsA' target="_blank" rel="noreferrer">Join</a> the waitlist</div>
+                </div>
             </div>
         </main>
     </Layout>
