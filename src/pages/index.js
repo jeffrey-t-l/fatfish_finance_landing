@@ -7,7 +7,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`jeffl`, `jeff`, `leibensperger`, `workday`]}
         title="Home"
       />
 
@@ -15,14 +15,13 @@ function IndexPage() {
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
             <div>
-              <h1 className="px-4 pt-5 text-2xl text-left text-black-500 font-bold sm:text-3xl">
+              <h1 className="px-4 pt-5 text-2xl text-left text-black-500 font-bold sm:text-3xl border-l-4">
                 Hi There!
               </h1>
- {/*
-              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
-                I am Jeff. I currently reside in <a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY.</a>
-              </p>
-  */}
+              <br />
+              <blockquote className="pl-4 leading-loose text-justify border-l-4 border-gray-900">
+                Welcome to my website. There may not be too much to do here, but thanks for looking around. Feel free to stop by anytime.
+              </blockquote>
               <br />
               <br />
             </div>
