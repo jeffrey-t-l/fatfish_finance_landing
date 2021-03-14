@@ -1,44 +1,55 @@
 import PropTypes from "prop-types";
 import React from "react";
+import SEO from "./seo";
+import { Link } from "gatsby"
 
-import Header from "./header";
+//import Header from "./header";
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
-      <Header />
-
-      <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16">
-        {children}
-      </main>
-
-      <footer className="bg-blue-700">
-        <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
-          <p className="text-white">
-            Created by{` `}
-            <a
-              className="font-bold no-underline"
-              href="https://bryant.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Taylor Bryant
-            </a>
-          </p>
-
-          <p>
-            <a
-              className="font-bold text-white no-underline"
-              href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </p>
+    <>
+      <SEO />
+      <div className="flex flex-col min-h-screen bg-gray-200">
+        <nav className="flex items-center justify-between flex-wrap p-6 bg-black text-white font-semibold">
+          <div className="flex items-left flex-no-shrink text-white mr-6">
+            {/*<svg className="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>*/}
+            <Link to="/"><span className="font-semibold text-xl tracking-tight">Jeff Leibensperger</span></Link>
+          </div>
+          <div className="w-full block flex-grow lg:flex lg:items-left lg:w-auto">
+            <div className="text-sm lg:flex-grow">
+              <Link to="/books">
+                <span className="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
+                  Good Reads
+                </span>
+              </Link>
+              <Link to="/resume">
+                <span className="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
+                  Work Experience
+                </span>
+              </Link>
+            </div>
+          </div>
+          <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+            <div  className="text-sm">
+              <a href="https://github.com/jeffrey-t-l/" target="_blank" rel="noreferrer"
+                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
+                    GitHub
+              </a>
+            </div>
+            <div  className="text-sm">
+              <a href="https://www.linkedin.com/in/jeffleibensperger/" target="_blank" rel="noreferrer"
+                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
+                    LinkedIn
+              </a>
+            </div>
+          </div>
         </nav>
-      </footer>
-    </div>
+        {children}
+        <footer className="p-16 bg-black text-gray-600 text-xs text-right align-bottom">
+          <div>Icons by <a href="https://www.freepik.com"  target="_blank" rel="noreferrer" title="Freepik">Freepik</a></div>
+        </footer>
+      </div>
+    </>
   );
 }
 

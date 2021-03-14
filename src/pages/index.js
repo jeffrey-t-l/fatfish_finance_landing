@@ -1,8 +1,7 @@
 import React from "react";
-
+import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
 function IndexPage() {
   return (
@@ -12,30 +11,29 @@ function IndexPage() {
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
+      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
+        <div className="sm:flex sm:flex-row-reverse sm:items-center">
+          <div className="sm:px-2">
+            <div>
+              <h1 className="px-4 pt-5 text-2xl text-left text-black-500 font-bold sm:text-3xl">
+                Hi There!
+              </h1>
+ {/*
+              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
+                I am Jeff. I currently reside in <a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY.</a>
+              </p>
+  */}
+              <br />
+              <br />
+            </div>
+          </div>
+          <img
+            className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
+            src={heroImage}
+            alt="Pt. Reyes National Seashore"
+          ></img>
+        </div>
+      </main>
     </Layout>
   );
 }

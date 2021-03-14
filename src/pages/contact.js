@@ -7,7 +7,7 @@ function ContactPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`jeffl`, `jeff`, `leibensperger`, `workday`]}
         title="Contact"
       />
       <section>
