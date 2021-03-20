@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Jeff Leibensperger`,
+    title: `Fat Fish`,
     description: `Gatsby styled with Tailwind`,
-    author: `@jeffrey-t-l`,
+    author: `@j`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jeffl-website`,
-        short_name: `jeffl`,
+        name: `fatfish.finance`,
+        short_name: `fatfish`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.black["500"],
