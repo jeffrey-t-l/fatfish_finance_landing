@@ -39,10 +39,9 @@ function Layout({ children }) {
           */}
         </nav>
         {children}
-        {/*}
-        <footer className="p-8 bg-black text-gray-600 text-xs text-right align-bottom">
+        <footer className="p-1 bg-black bg-blue-600 text-xs text-right align-bottom text-gray-800">
+          <div>Icons by <a href="https://www.freepik.com"  target="_blank" rel="noreferrer" title="Freepik">Freepik</a></div>
         </footer>
-        */}
       </div>
     </>
   );
