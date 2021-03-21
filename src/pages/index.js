@@ -21,8 +21,8 @@ function IndexPage() {
               */}
               <br />
               <br />
-              <blockquote className="pl-8 leading-loose text-justify border-l-4 border-gray-900 text-4xl">
-                Welcome to fatfish.finance
+              <blockquote className="pl-8 leading-loose text-justify border-l-4 border-white text-4xl text-white">
+                <strong>Welcome to FatFish.finance.</strong>
               </blockquote>
               <br />
               <br />

@@ -7,11 +7,11 @@ function Layout({ children }) {
   return (
     <>
       <SEO />
-      <div className="flex flex-col min-h-screen bg-gray-200">
-        <nav className="flex items-center justify-between flex-wrap p-6 bg-black text-white font-semibold">
+      <div className="flex flex-col min-h-screen bg-blue-600">
+        <nav className="flex items-center justify-between flex-wrap p-6 bg-black text-white font-semibold bg-blue-600">
           <div className="flex items-left flex-no-shrink text-white mr-6">
             {/*<svg className="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>*/}
-            <Link to="/"><span className="font-semibold text-xl tracking-tight">FatFish.finance</span></Link>
+            <Link to="/"><span className="font-semibold text-2xl tracking-tight text-white-600">FatFish.finance</span></Link>
           </div>
           {/*}
           <div className="w-full block flex-grow lg:flex lg:items-left lg:w-auto">
@@ -39,8 +39,10 @@ function Layout({ children }) {
           */}
         </nav>
         {children}
+        {/*}
         <footer className="p-8 bg-black text-gray-600 text-xs text-right align-bottom">
         </footer>
+        */}
       </div>
     </>
   );
